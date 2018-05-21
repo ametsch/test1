@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <title> Stock Analysis </title>
+  <head>
+    <STYLE TYPE='text/css'>
+    /* CSS generated at csscreator.com */
+    BODY{background-color:#FAAC58; color:#000000; font-family:serif; font-size:large; font-weight:normal; }
+    DIV{background-color:#FAAC58; color:#000000; font-family:serif; font-size:large; font-weight:normal; text-decoration:none; }
+    INPUT{font-family:serif; font-size:large; color:#000000; background-color:#FAAC58; border-style:inset; border-width:medium; border-color:#000000;}
+    </STYLE>
+  </head>
+    <body>
+      <div class="container">
+        <form action="{{url_for('plot')}}" method="POST">
+          <input title="Enter NYSE symbol: " placeholder="NYSE Symbol" type="string" name="symb" required> <br>
+          <button type="submit"> Submit </button>
+        </form>
+      </div>
+    </body>
+</html>
